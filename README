@@ -1,0 +1,22 @@
+HOW TO RUN:
+
+Neural Network:
+Usage: python neural_networks.py -d [c/i/m1/m2/m3] -r [train test ratio] -o [sgd/sgdm/adagrad/lbfgs] -s [s/m/l] -w [1/2/3]
+
+-d is the data set to select
+-r is the train test ratio
+-o is the optimization algorithm sgd, sgdm (with momentum) and adagrad
+-s small , medium , large is for the size of the network
+-w 1,2,3 weight initialization:
+1 is +- (n + o)^(-1/2) 
+2 is +/- (n)^(-1/2)
+3 is (+/- 0.01)
+
+Naive Bayes:
+Usage: python naive_bayes.py -d [c/i/m1/m2/m3] -r [train test ratio]
+
+Decision Trees:
+Usage: python decision_tree.py -d [c/i/m1/m2/m3] -r [train test ratio] -p [true/false] -m [g/gr]
+-p accepts true/false which enables pruning
+-m g or gr uses Information Gain or Gain Ratio to split
+
